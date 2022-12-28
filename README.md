@@ -2,6 +2,7 @@
 
 > eunno, dahae
 
+- [ ]  firestore에 cutomer-ios 앱 등록하기
 - [ ]  app 파일에 delegate 기본 코드
 - [ ]  Google
 - [ ]  Store 폴더 생성
