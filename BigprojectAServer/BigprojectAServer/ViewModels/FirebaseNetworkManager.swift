@@ -10,15 +10,18 @@ import FirebaseFirestore
 import FirebaseAuth
 
 final class FirebaseNetworkManager: ObservableObject {
+	// MARK: PROPERTIES
 	@Published var viewData = ""
 	
 	let superCollectionName: String
 	let firebasePath = Firestore.firestore()
 	
+	// MARK: LIFECYCLE
 	init(superCollectionName: CollectionType) {
 		self.superCollectionName = superCollectionName.rawValue
 	}
-	// MARK: FetchData
+	
+	// MARK: METHODS
 	/// Firestore에 Map 으로 저장된 데이터를 가져옵니다.
 	/// Firestore의 Map 타입 데이터는 딕셔너리 키-밸류 타입으로 캐스팅 한 후, 다시 키를 참조하여 값을 가져올 수 있습니다.
 	@MainActor

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703BA5B3295D179100FD24C3 /* Fundatmentals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703BA5B2295D179100FD24C3 /* Fundatmentals.swift */; };
 		705377E3295C0CE1003B396D /* Timestamp+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705377E2295C0CE1003B396D /* Timestamp+.swift */; };
 		705377E6295C0D07003B396D /* FirebaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705377E5295C0D07003B396D /* FirebaseNetworkManager.swift */; };
 		705377E9295C0D1B003B396D /* CollectionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705377E8295C0D1B003B396D /* CollectionTypes.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		703BA5B2295D179100FD24C3 /* Fundatmentals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundatmentals.swift; sourceTree = "<group>"; };
 		705377E2295C0CE1003B396D /* Timestamp+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timestamp+.swift"; sourceTree = "<group>"; };
 		705377E5295C0D07003B396D /* FirebaseNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNetworkManager.swift; sourceTree = "<group>"; };
 		705377E8295C0D1B003B396D /* CollectionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTypes.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				705377E8295C0D1B003B396D /* CollectionTypes.swift */,
+				703BA5B2295D179100FD24C3 /* Fundatmentals.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				705377E6295C0D07003B396D /* FirebaseNetworkManager.swift in Sources */,
 				70AE801F295BE16A00A8BE01 /* ContentView.swift in Sources */,
 				705377E9295C0D1B003B396D /* CollectionTypes.swift in Sources */,
+				703BA5B3295D179100FD24C3 /* Fundatmentals.swift in Sources */,
 				70AE801D295BE16A00A8BE01 /* BigprojectAServerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
