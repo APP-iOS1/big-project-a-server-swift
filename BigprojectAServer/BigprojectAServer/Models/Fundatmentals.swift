@@ -7,7 +7,7 @@
 
 import Foundation
 
-let storeAppCategory: AppCategoryEnum = <#열거형 값 할당#>
+let appCategory: AppCategoryEnum = <#열거형 값 할당#>
 
 // MARK: - 앱의 성격을 구별하는 카테고리 열거형
 /// 사용자가 현재 사용 중인 프로젝트의 앱을 구별하는 열거형입니다.

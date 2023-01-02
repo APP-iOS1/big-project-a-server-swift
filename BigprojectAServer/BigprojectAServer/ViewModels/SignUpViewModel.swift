@@ -17,10 +17,11 @@ enum AuthenticationState {
 class SignUpViewModel: ObservableObject {
     @Published var errorMessage = ""
     @Published var authenticationState: AuthenticationState = .unauthenticated
-    
+	@Published var currentUser: CustomerInfo?
+	
     let database = Firestore.firestore()
     let authentification = Auth.auth()
-    
+	
     
     // MARK: - Create New Customer(user)
     /// Auth에 새로운 사용자를 생성합니다.
@@ -54,7 +55,7 @@ class SignUpViewModel: ObservableObject {
     /// - Parameter email: 현재 사용자의 email
     /// - Parameter nickname: 현재 사용자의 nickname
     func registerUser(uid: String, email: String, nickname: String) {
-        database.collection("CustomerInfo")
+        database.collection("\(appCategory.rawValue)")
             .document(uid)
             .setData([
                 "id" : uid,
@@ -70,7 +71,7 @@ class SignUpViewModel: ObservableObject {
     /// - Returns: 중복된 이메일이 있는지에 대한 Boolean 값
     func isEmailDuplicated(currentUserEmail: String) async -> Bool {
         do {
-            let document = try await database.collection("CustomerInfo")
+            let document = try await database.collection("\(appCategory.rawValue)")
                 .whereField("userEmail", isEqualTo: currentUserEmail)
                 .getDocuments()
             return !(document.isEmpty)
@@ -87,7 +88,7 @@ class SignUpViewModel: ObservableObject {
     /// - Returns: 중복된 닉네임이 있는지에 대한 Boolean 값
     func isNicknameDuplicated(currentUserNickname: String) async -> Bool {
         do {
-            let document = try await database.collection("CustomerInfo")
+			let document = try await database.collection("\(appCategory.rawValue)")
                 .whereField("userNickname", isEqualTo: currentUserNickname)
                 .getDocuments()
             return !(document.isEmpty)
@@ -96,4 +97,24 @@ class SignUpViewModel: ObservableObject {
             return false
         }
     }
+	
+	// MARK: - Login
+	public func requestUserLogin(withEmail email: String, withPassword password: String) async -> Void {
+		do {
+			try await authentification.signIn(withEmail: email, password: password)
+			self.currentUser = <#AppUserModel#>
+			
+		} catch {
+			dump("DEBUG : LOGIN FAILED \(error.localizedDescription)")
+		}
+	}
+	
+	// MARK: - Logout
+	public func requestUserSignOut() {
+		do {
+			try authentification.signOut()
+		} catch {
+			dump("DEBUG : LOG OUT FAILED \(error.localizedDescription)")
+		}
+	}
 }
