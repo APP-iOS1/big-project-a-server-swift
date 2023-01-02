@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7003B9F029625CB600278418 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003B9EF29625CB600278418 /* SignUpViewModel.swift */; };
+		7003B9F229625D0900278418 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003B9F129625D0900278418 /* UserInfo.swift */; };
 		703BA5B3295D179100FD24C3 /* Fundatmentals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703BA5B2295D179100FD24C3 /* Fundatmentals.swift */; };
 		705377E3295C0CE1003B396D /* Timestamp+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705377E2295C0CE1003B396D /* Timestamp+.swift */; };
 		705377E6295C0D07003B396D /* FirebaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705377E5295C0D07003B396D /* FirebaseNetworkManager.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7003B9EF29625CB600278418 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		7003B9F129625D0900278418 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		703BA5B2295D179100FD24C3 /* Fundatmentals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundatmentals.swift; sourceTree = "<group>"; };
 		705377E2295C0CE1003B396D /* Timestamp+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timestamp+.swift"; sourceTree = "<group>"; };
 		705377E5295C0D07003B396D /* FirebaseNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNetworkManager.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 		705377E4295C0CE7003B396D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				7003B9EF29625CB600278418 /* SignUpViewModel.swift */,
 				705377E5295C0D07003B396D /* FirebaseNetworkManager.swift */,
 			);
 			path = ViewModels;
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				705377E8295C0D1B003B396D /* CollectionTypes.swift */,
+				7003B9F129625D0900278418 /* UserInfo.swift */,
 				703BA5B2295D179100FD24C3 /* Fundatmentals.swift */,
 				707A579629604DC1006E540E /* UserAuthentication.swift */,
 			);
@@ -204,10 +210,12 @@
 			files = (
 				705377E3295C0CE1003B396D /* Timestamp+.swift in Sources */,
 				705377E6295C0D07003B396D /* FirebaseNetworkManager.swift in Sources */,
+				7003B9F029625CB600278418 /* SignUpViewModel.swift in Sources */,
 				70AE801F295BE16A00A8BE01 /* ContentView.swift in Sources */,
 				707A579729604DC1006E540E /* UserAuthentication.swift in Sources */,
 				705377E9295C0D1B003B396D /* CollectionTypes.swift in Sources */,
 				703BA5B3295D179100FD24C3 /* Fundatmentals.swift in Sources */,
+				7003B9F229625D0900278418 /* UserInfo.swift in Sources */,
 				70AE801D295BE16A00A8BE01 /* BigprojectAServerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
